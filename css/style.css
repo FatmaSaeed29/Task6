@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lalezar&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    overflow:hidden;
+}
+.all
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.all .first
+{
+    max-width: 250px;
+    height: 430px;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+.all .second
+{
+    max-width: 250px;
+    height: 430px;
+    background-color: hsl(184, 100%, 22%);
+}
+.all .third
+{
+    max-width: 250px;
+    height: 430px;
+    background-color:hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+.all img 
+{
+    padding: 25px 30px 10px 30px;
+}
+.all h1
+{
+    padding: 0px 30px 10px 30px;  
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive; 
+}
+.all p
+{
+    padding: 0px 30px 25px 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lalezar', cursive;
+}
+.all button
+{
+    padding: 10px 28px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lalezar', cursive;
+}
+.all .first button
+{
+    color: hsl(31, 77%, 52%);
+}
+.all .second button
+{
+    color: hsl(184, 100%, 22%);
+}
+.all .third button
+{
+    color: hsl(179, 100%, 13%);
+}
+.all button:hover
+{
+    cursor: pointer;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+@media (max-width:1440px)
+{
+    .all
+    {
+        /* width: 50%; */
+        /* height: 320px; */
+        margin-left: -100px;
+        /* margin-right: 600px; */
+    }
+    .all .first,.all .second,.all .third
+    {
+        width: 250px;
+        height: 400px;
+    }
+    .all button 
+    {
+        margin-top: -60px;
+    }
+}
+@media (max-width:375px)
+{
+    .all
+    {
+        flex-direction: column;
+        margin: 70px 10px 70px 50px;
+    }
+    .all .first,.all .second,.all .third
+    {
+        height: 380px;
+    }
+    .all button
+    {
+        margin-top: -100px;
+    }
+    .all .first
+    {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .all .second
+    {
+        border-radius: 0px;
+    }
+    .all .third
+    {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
